@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: install npm
+      apt:
+       name: npm
+       state: present
+        
+    - name: saluda
+      shell: echo hola
+
+- hosts: 34.69.14.182
+
+  tasks:
+    - name: install python
+      apt:
+       name: python3
+       state: present
+        
+    - name: saluda
+      shell: echo hola
